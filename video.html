@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Video</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="Images/video.png">
+</head>
+<body class="body">
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn">Home</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">News</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Video</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Gallery</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Contact</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+    <br>
+    <h1>Video</h1>
+
+    <div class="video">
+        <video controls autoplay>
+            <source src='Video/travel.mp4' type="video/mp4">
+        </video>
+        
+        <video controls autoplay>
+            <source src='Video/mexico.mp4' type="video/mp4">
+        </video>
+        <audio controls>
+            <source src='Audio/Scorpions.mp3' type="audio/mpeg">
+            </audio>
+    </div>
+   
+
+    <div>
+        <input type="number" name="numar1" id="numar1" placeholder="Numarul 1">
+        <input type="number" name="numar2" id="numar2" placeholder="Numarul 2">
+        <button id="calculeaza" type="submit" onclick="calculeaza_suma();">Calculeaza</button>
+        <button id="compara" type="submit" onclick="compara_numerele();">Compara</button>
+    </div>
+    <div>Suma dintre cele 2 numere este: <span id="rezultat_suma"> </span> </div>
+    <br>
+    <div>Numarul mai mare este: <span id="rezultat_comparatie"> </span></div>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

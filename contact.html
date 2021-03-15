@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="Images/contact.png">
+</head>
+<body>
+    <header id="contact">
+        <div class="dropdown">
+            <button class="dropbtn">Home</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+                
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">News</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Video</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Gallery</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Contact</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <h1>Contact</h1>
+    <form method="POST" action="login.php">
+        <br>
+        <table>
+            <tr>
+                <td><label for="text">First name: </label></td>
+                <td><input type="text" name="text" id="text" placeholder="Name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="text">Last name: </label></td>
+                <td><input type="text" name="text" id="text" placeholder="Name" required></td>
+            </tr>
+            
+            <tr>
+                <td><label for="email">E-mail: </label></td>
+                <td><input type="email" name="email" id="email" placeholder="E-mail" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="number">Phone: </label></td>
+                <td><input type="number" name="number" id="number" placeholder="Phone nr." required></td>
+            </tr>
+
+            <tr>
+                <td><label for="mesaj">Message: </label></td>
+                <td><textarea cols="40" rows="10" name="mesaj" id="mesaj" placeholder="Your message"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="file">File: </label></td>
+                <td><input type="file" name="file" id="file"></td>
+            </tr>
+            <tr>
+                <td><label for="functie">Job: </label></td>
+                <td>
+                    <select name="functie" id="functie">
+                        <option value="1">Director</option>
+                        <option value="2">Sales manager</option>
+                        <option value="3">Technician</option>
+                        <option value="4">Call-center</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><button type="submit">Submit</button></td>
+            </tr>
+        </table>
+
+    </form>
+    <p id="p_table">Travel writers</p>
+    <table id="table">
+        <thead>
+            <th>ID</th>
+            <th>Authors</th>
+            <th>E-mail</th>
+        </thead>
+        <tbody id="tbody">
+            <tr>
+                <td>1</td>
+                <td>Mark William</td>
+                <td>markwilliam@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Chloe Lay</td>
+                <td>laychloe@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sophie Small</td>
+                <td>ss@yahoo.com</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

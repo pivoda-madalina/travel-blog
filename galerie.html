@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="Images/video.png">
+</head>
+<body class="body">
+    <header>
+        <div class="dropdown">
+            <button class="dropbtn">Home</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">News</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Video</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Gallery</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Contact</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="noutati.html">News</a>
+                <a href="video.html">Video</a>
+                <a href="galerie.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        
+    </header>
+    <h1>Photo Gallery</h1>
+    <div class="toate_pozele">
+        <div>
+            <div class="coloana">
+                <img src="Images/comino.jpg" onmouseover="afiseaza_imaginea(this);" onmouseout="ascunde_imaginea(this);">
+                <div class="tooltiptext">Comino, Malta</div>
+            </div>
+            <div class="coloana">
+                <img src="Images/lanzarote.jpg" onmouseover="afiseaza_imaginea(this);" onmouseout="ascunde_imaginea(this);">
+                <div class="tooltiptext">Lanzarote, Canary Islands</div>
+            </div>
+            <div class="coloana">
+                <img src="Images/porto.jpg" onmouseover="afiseaza_imaginea(this);" onmouseout="ascunde_imaginea(this);">
+                <div class="tooltiptext">Porto Santo, Madeira, Portugal</div>
+            </div>
+            <div class="coloana">
+                <img src="Images/hvar.jpg" onmouseover="afiseaza_imaginea(this);" onmouseout="ascunde_imaginea(this);">
+                <div class="tooltiptext"> Hvar, Croatia</div>
+            </div>
+            
+        </div>
+
+        <div class="div_imagine_mare">
+            <img id="imagine_mare">
+        </div>
+    </div>
+
+    <script>
+        function afiseaza_imaginea(poza) {
+            var img_mare = document.getElementById("imagine_mare");
+            img_mare.style = "display: block;";
+            img_mare.src = poza.src;
+        }
+
+        function ascunde_imaginea() {
+            var img_mare = document.getElementById("imagine_mare");
+            img_mare.style = "display: none;";
+        }
+    </script>
+
+</body>
+</html>
